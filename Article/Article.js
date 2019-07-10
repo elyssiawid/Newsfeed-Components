@@ -40,13 +40,13 @@ function Article (domElement){
  this.domElement = domElement;
  this.expandButton = this.domElement.querySelector(".expandButton");
  this.expandButton.textContent = "expand";
- this.expandButton.addEventListener('click', () => expandArticle())
+//  this.expandButton.addEventListener('click', () => expandArticle())
  this.expandButton.addEventListener('click', expandArticle)
 }
 
 function expandArticle(event) {
-  event.target.parentElement.classList.toggle("article-open");
   console.log(event);
+  event.target.parentElement.classList.toggle("article-open");
 }
 
 // const articles = document.querySelectorAll('.article')
